@@ -364,11 +364,15 @@ p
 {
     opacity: .9;
 }
-#services .services-item .icon
+#services .services-item .icon 
 {
     width: 90px;
     height: 90px;
     margin-bottom: 10px;
+}
+#services .services-item .icon i{
+    font-size: 9rem;
+    color: rgb(216, 235, 131);
 }
 #services .services-item h2
 {
@@ -484,13 +488,12 @@ p
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 0 100px 0;
+    padding: 0 50px 100px 50px;
 }
 .col-right
 {
     margin-bottom: 20px;
 }
-
 .col-right h2
 {
     font-size: 2rem;
@@ -543,6 +546,7 @@ p
 {
     font-size: 4rem;
     font-weight: 300;
+   
 }
 #contact .contact-items
 {
@@ -550,6 +554,7 @@ p
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 #contact .contact-card
 {
@@ -558,8 +563,7 @@ p
     align-items: center;
     flex-direction: column;
     width: 80%;
-  
-    padding: 30px;
+    padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 15px 0 #000000cf;
@@ -573,6 +577,10 @@ p
 {
     width: 20%;
     margin-bottom: 10px;
+}
+#contact .icon i{
+    font-size: 5rem;
+    color: rgb(98, 98, 179);
 }
 #contact h1
 {
@@ -596,7 +604,7 @@ p
 /* Footer */
     #footer
     {
-        background-image: linear-gradient(60deg , #29323c 0% , #485563 100%);
+        background-image: linear-gradient(60deg , #0f0f0f 0% , #485563 100%);
     }
     #footer .footer
     {
@@ -616,16 +624,31 @@ p
     {
         height: 50px;
         width: 50px;
-        margin: 0 5px;
+        margin: 0 10px;
     }
-    #footer .social-item  img
+    #footer .social-item  i
     {
-        filter: grayscale(1);
+        font-size: 4rem;
         transition: 1s;
     }
-    #footer .social-item  img:hover
+    .fa-facebook-square{
+        color: #3b5998;
+    }
+    .fa-twitter-square{
+        color:#00ACee;
+    }
+    .fa-instagram-square{
+        color:#477eaa;
+    }
+    .fa-github-square{
+        color:#9CDAF1;
+    }
+    .fa-facebook-square:hover,
+    .fa-github-square:hover,
+    .fa-twitter-square:hover,
+    .fa-instagram-square:hover
     {
-        filter: grayscale(0);
+        color: bisque;
     }
     #footer h2
     {
@@ -648,30 +671,7 @@ p
 
 @keyframes puls
 {
-    0%
-    {
-       background-color: cyan;
-    }
-    20%
-    {
-        background-color: brown;
-    }
-    40%
-    {
-        background-color: cadetblue;
-    }
-    60%
-    {
-        background-color: crimson;
-    }
-    80%
-    {
-        background-color: darkolivegreen;
-    }
-    100%
-    {
-        background-color: blueviolet;
-    }
+   
 }
         
 @keyframes textrevealbox
@@ -714,12 +714,12 @@ p
         {
             
             padding: 10px 30px;
-            font-size: 4rem;
+            font-size: 3rem;
             letter-spacing: .2rem;
         }
         #hero h1
         {
-            font-size: 6rem;
+            font-size: 4rem;
         }
         /* End Hero Section */
 
@@ -792,13 +792,15 @@ p
         {
             font-size: 2rem;
         }
+        #about .container{
+            margin-bottom: -30px;
+        }
         /* End About section */
 
         /* Contact section */
         #contact .contact {
             flex-direction: column;
             padding: 100px 0;
-
         }
         #contact .contact-items
         {
@@ -809,25 +811,30 @@ p
         }
         #contact .contact-card
         {
+            
             width: 30%;
-            margin: 0;
+            margin: 10;
             flex-direction: row;
-            padding: 10px;
+            padding: 15px 10px;
+            overflow: hidden;
         }
         #contact .contact-info
         {
             width: 100%;
             text-align: left;
-            padding-left: 10px;
+            padding-left: 5px;
         }
         #contact .icon
         {
             height: 50%;
-            width: 60%;
+            width: 30%;
         }
-        #contact .icon img{
-        object-fit: contain
+        #contact .icon i
+        {
+            font-size: 3rem;
+            margin-left: 2px;
         }
+       
         /* End contact section */
     }
     /* end For tablet */
@@ -837,6 +844,20 @@ p
     
 @media (min-width:1200px)
 {
+    .cta
+    {
+        
+        padding: 10px 30px;
+        font-size: 4rem;
+        letter-spacing: .2rem;
+    }
+    #hero h1
+    {
+        font-size: 7rem;
+    }
+    #about .container{
+        margin-bottom: -90px;
+    }
     #header .nav-list .hamburger
     {
         display: none;
@@ -872,6 +893,36 @@ p
         width: 250px;
         height: 360px;
     }
+    #contact .contact {
+        flex-direction: column;
+        padding: 100px 0;
+        margin-top: 0px;
+    }
+    #contact .contact-card
+        {
+            
+            width: 25%;
+            margin: 5px;
+            flex-direction: row;
+            padding: 3rem 20px;
+            overflow: hidden;
+        }
+        #contact .contact-info
+        {
+            width: 100%;
+            text-align: left;
+            padding-left: 15px;
+        }
+        #contact .icon
+        {
+            height: 50%;
+            width: 50%;
+        }
+        #contact .icon i
+        {
+            font-size: 6rem;
+            margin-left: 2px;
+        }
 }
 
 /* end media query for desktop */
