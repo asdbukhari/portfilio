@@ -173,7 +173,7 @@ p
     height: 50px;
     border: 3px solid #ffffff;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: -10px;
     z-index: 1000;
     position: relative;
     display: flex;
@@ -240,14 +240,14 @@ p
     height: 100%;
     width: 100%;
     background-color: #555555;
-    opacity: .7;
+    opacity: .3;
     z-index: -1;
 }
 #hero .hero
 {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 30px;
     justify-content: flex-start;
 }
 #hero h1
@@ -262,16 +262,17 @@ p
 }
 #hero h1:nth-child(1)
 {
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 #hero h1:nth-child(2)
 {
-    animation-delay: 2s;
+    animation-delay: 3s;
 }
 #hero h1:nth-child(3)
 {
-    animation: textreveal-name 0.5s ease forwards;
-    animation-delay: 3s;
+    animation: textreveal-name 1s ease forwards;
+    font-family: 'Grenze Gotisch', cursive;
+    animation-delay: 4s;
 }
 #hero h1 span
 {
@@ -281,20 +282,20 @@ p
     width:  0;
     height: 100%;
     background:crimson;
-    animation: textrevealbox 1s ease;
-    animation-delay: 2s;
+    animation: textrevealbox .8s ease;
+    animation-delay: 4s;
 }
 #hero h1:nth-child(1) span
 {
-    animation-delay: .5s;
+    animation-delay: 1.5s;
 }
 #hero h1:nth-child(2) span
 {
-    animation-delay: 1.5s;
+    animation-delay: 2.5s;
 }
 #hero h1:nth-child(3) span
 {
-    animation-delay: 2.5s;
+    animation-delay: 3.5s;
 }
 
 /* hero section end */
@@ -505,7 +506,7 @@ p
 .col-right .cta
 {
     color: black;
-    padding: 10px 20px ;
+    padding: 5px 10px ;
 }
 .col-left 
 {
@@ -546,7 +547,6 @@ p
 {
     font-size: 4rem;
     font-weight: 300;
-   
 }
 #contact .contact-items
 {
@@ -580,7 +580,7 @@ p
 }
 #contact .icon i{
     font-size: 5rem;
-    color: rgb(98, 98, 179);
+    color: rgb(121, 121, 167);
 }
 #contact h1
 {
@@ -669,10 +669,7 @@ p
 
         /* key frames */
 
-@keyframes puls
-{
-   
-}
+
         
 @keyframes textrevealbox
 {
@@ -693,14 +690,19 @@ p
         color: white;
     }
 }
-@keyframes textreveal-name
+ @keyframes textreveal-name
 {
-    100%
+  /*  0%
     {
         color: crimson;
         font-family: 'Grenze Gotisch', cursive;
+    }*/
+    100%
+    {
+        color: crimson;
+        
     }
-}
+} 
 /* end key frames */
 
 
@@ -711,8 +713,7 @@ p
     {
         /* Hero Section */
         .cta
-        {
-            
+        {   
             padding: 10px 30px;
             font-size: 3rem;
             letter-spacing: .2rem;
