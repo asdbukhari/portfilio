@@ -845,7 +845,6 @@ p
 {
     .cta
     {
-        
         padding: 10px 30px;
         font-size: 4rem;
         letter-spacing: .2rem;
@@ -921,6 +920,12 @@ p
         {
             font-size: 6rem;
             margin-left: 2px;
+        }
+        #footer .social-item 
+        {
+            height: 50px;
+            width: 50px;
+            margin: 0 30px;
         }
 }
 
