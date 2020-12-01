@@ -173,7 +173,7 @@ p
     height: 50px;
     border: 3px solid #ffffff;
     border-radius: 50%;
-    margin-right: -12px;
+    margin-right: 10px;
     z-index: 1000;
     position: relative;
     display: flex;
@@ -341,7 +341,7 @@ p
     flex-direction: column;
     padding: 10px 20px;
     border-radius: 10px;
-    background: url(./img/notebook.jpg);
+    background: url(./img/pic1.jpg);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
@@ -848,7 +848,7 @@ p
 
     /* media query for desktop */
     
-@media (min-width:1200px)
+@media (min-width:1235px)
 {
     .cta
     {
@@ -888,6 +888,44 @@ p
     {
         font-size: 1.5rem;
     }
+    .brand h1
+    {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2.5rem;
+        font-weight: 500;
+        letter-spacing: .5rem;
+        color: #ffffff;
+        font-family: 'Grenze Gotisch', cursive;
+    }
+    /* Header */
+    #header
+    {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        z-index: 1000;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height:auto;
+    }
+    #header .nav-bar
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 100%;
+        min-width: 1200px;
+    }
+    #header .nav-bar h1
+    {
+        font-size: 3rem;
+    }
+    #header .header .nav-bar .nav-list{
+        margin: 0 0 0 30em;
+    }   
     #services .services-section .services-bottom .services-item
     {
         flex-basis: 22%;
