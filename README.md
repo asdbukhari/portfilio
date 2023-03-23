@@ -9,4 +9,7 @@ To clone this repo, follow these steps:
 https://github.com/asdbukhari/portfilio.git
 ```
 
+# Starting the server
 
+1. Install the Live server extension in vs code
+2. Open index.html file and click on the **Go Live** button right bottom of your vs code
